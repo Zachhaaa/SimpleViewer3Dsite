@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Viewer 3D</title>
+  <link rel="icon" href="logo.svg">
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      font-size: 22px;
+    }
+    body {
+      background-color: rgb(20, 20, 20); 
+      display: flex; 
+      align-items: center; 
+      flex-direction: column;
+    }
+    div {
+      max-width: 700px;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    #title-bar {
+      display: flex; 
+      align-items: center;
+      gap: 40px;
+    }
+    button {
+      height: 50px;
+      padding: 10px;
+      background-color: rgb(69, 61, 40); 
+      border: 0; 
+      border-radius: 15px;
+    }
+    button:hover {
+      background-color: rgb(113, 100, 65);
+    }
+    button:active {
+      background-color: rgb(124, 110, 70);
+    }
+    a {
+      margin-top: 18px;
+      margin-bottom: 18px;
+      display: block;
+      color: rgb(51, 127, 245);
+      text-decoration: underline;
+    }
+    a:hover {
+      color: rgb(95, 153, 239);
+    }
+    a:active {
+      color: rgb(127, 174, 245);
+    }
+    ul {
+      line-height: 32px;
+    }
+    #vulkan-logo {
+      height: 28px; 
+      position: relative; 
+      top: 4px; 
+      margin-left: 5px;
+    }
+    b {
+      color: rgb(199, 167, 77);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div id="title-bar">
+      <img src="Logo.svg">
+      <h1>Simple Viewer 3D</h1>
+    </div>
+    <p>A simple, fast, open source, 3D file viewer that can open: </p>
+    <ul>
+      <li>.stl files</li>
+      <li>.obj files</li>
+      <li>.3mf files</li>
+    </ul>
+    <p>Currently, you can only download it for Windows x86.</p>
+    <a href="SimpleViewer3Dinstaller.exe"><button>Download for Windows x86</button></a>
+    <a href="">Github git</a>
+    <p>
+      You can compile to ARM on windows using the Github and following the README. 
+      Just keep in mind <u>the ARM build has not been tested yet</u> (which is why a download for it is not published).
+    </p>
+    <h2>Features:</h2>
+    <ul>
+      <li><b>Multiple Files</b> and tabs open at once.</li>
+      <li>Window <b>docking</b></li>
+      <li><b>Fast</b> file load times</li>
+      <li><b>Fast</b> renderer using <img id="vulkan-logo" src="Vulkan_logo.svg" alt="Vulkan"></li>
+    </ul>
+  </div>
+</body>
+</html>
